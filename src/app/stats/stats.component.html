@@ -1,0 +1,5 @@
+<div>
+  <h2>Dit jaar:</h2>
+  <div>Ritten: {{ stats?.ytd_ride_totals.count }}</div>
+  <div>Aantal KM:  {{ stats?.ytd_ride_totals.distance * 0.001 | number:'0.0-2' }} km</div>
+</div>

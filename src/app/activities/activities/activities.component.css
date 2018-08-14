@@ -1,0 +1,10 @@
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activity-card {
+    max-width: 250px;
+    margin-bottom: 1em;
+}

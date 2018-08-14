@@ -1,0 +1,8 @@
+<h2>{{ activity?.name }}</h2>
+<div>{{ activity?.start_date_local | date:'fullDate' }}</div>
+<div>Afstand: {{ activity?.distance * 0.001 | number:'0.0-2' }}</div>
+<div>Gemiddeld: {{ activity?.average_speed * 3.6000000 | number:'0.1-2' }}</div>
+<div>Fiets: {{ activity?.gear.name }}</div>
+<div>Kudo's: {{ activity?.kudos_count }}</div>
+<a routerLink="/activities">Terug naar overzicht</a>
+
