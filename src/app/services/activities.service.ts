@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
     providedIn: 'root'
 })
-    export class ActivitiesService {
-    url = Globals.STRAVA_URL + '/athlete/activities?per_page=6&access_token='+ Globals.TOKEN;
+  export class ActivitiesService {
+  url = Globals.STRAVA_URL + '/athlete/activities?per_page=6&access_token='+ Globals.TOKEN;
   constructor(private http: HttpClient) { }
 
   getActivities() {

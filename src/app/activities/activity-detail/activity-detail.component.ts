@@ -1,6 +1,7 @@
 import { ActivityService } from '../../services/activity.service';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '../../../../node_modules/@angular/router';
+import { Stats } from 'fs';
 
 @Component({
   selector: 'app-activity-detail',
@@ -18,7 +19,7 @@ export class ActivityDetailComponent implements OnInit {
     private activityService: ActivityService
   ) {}
 
-  ngOnInit() {  
+  ngOnInit() { 
     this.route.params
       .subscribe((data: Params) => {
         this.activityID = data.id;

@@ -1,4 +1,4 @@
 export const Globals = Object.freeze( {
-    TOKEN: '###',
+    TOKEN: 'XXX',
     STRAVA_URL: 'https://www.strava.com/api/v3'
 });

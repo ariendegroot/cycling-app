@@ -7,9 +7,10 @@ import { HttpClient } from '@angular/common/http';
 })
     export class StatsService {
 
-    url = Globals.STRAVA_URL'/athletes/8237083/stats?&access_token='+Globals.TOKEN;
-    
-  constructor(private http: HttpClient) { }
+    url = Globals.STRAVA_URL + '/athletes/8237083/stats?&access_token='+ Globals.TOKEN;
+
+    constructor(
+      private http: HttpClient) { }
 
   getStats() {
     return this

@@ -12,8 +12,8 @@ import { HttpClient } from '@angular/common/http';
   constructor(
     private http: HttpClient) { }
 
-  getActivity(id: number) {
-    this.url = Globals.STRAVA_URL'/activities/'+ id + '?include_all_efforts=true&access_token='+ Globals.TOKEN;
+  getActivity(id: number) { 
+    this.url = Globals.STRAVA_URL+ '/activities/'+ id + '?include_all_efforts=true&access_token='+ Globals.TOKEN;
     return this
     .http
     .get(`${this.url}`)

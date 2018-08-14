@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
     export class UserService {
 
-    url = Globals.STRAVA_URL +'athlete?&access_token='+ Globals.TOKEN;
+    url = Globals.STRAVA_URL +'/athlete?&access_token='+ Globals.TOKEN;
     
   constructor(private http: HttpClient) { }
 
