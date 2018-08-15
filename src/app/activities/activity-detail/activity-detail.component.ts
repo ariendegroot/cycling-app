@@ -1,7 +1,7 @@
 import { ActivityService } from '../../services/activity.service';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '../../../../node_modules/@angular/router';
-import { Stats } from 'fs';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-activity-detail',
@@ -11,14 +11,13 @@ import { Stats } from 'fs';
 export class ActivityDetailComponent implements OnInit {
 
   activityID: number;
-  activity: any; 
-  
+  activity: any;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private activityService: ActivityService
   ) {}
-
   ngOnInit() { 
     this.route.params
       .subscribe((data: Params) => {
@@ -31,10 +30,6 @@ export class ActivityDetailComponent implements OnInit {
         this.activity = data;
         console.log(data);
       }); 
-
-
-  }
+    }
  
-}
- 
-
+}  

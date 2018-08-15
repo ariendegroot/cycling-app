@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
     export class ActivityService {
 
-  const url: string;
+  url: string;
 
   constructor(
     private http: HttpClient) { }

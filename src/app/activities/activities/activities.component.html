@@ -11,8 +11,20 @@
       <mat-card-subtitle>{{ activity.start_date_local | date:'fullDate' }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>{{ activity.distance * 0.001 | number:'0.0-2' }}</p>
-      <p>{{ activity.average_speed * 3.6000000 | number:'0.1-2' }}</p>
+      <div class="icon-wrapper">
+      <div>
+        <span class="material-icons">flag</span>
+        <p>{{ activity.distance * 0.001 | number:'0.0-2' }}</p>
+      </div>
+      <div>
+        <span class="material-icons">timeline</span>
+        <p>{{ activity.average_speed * 3.6000000 | number:'0.1-2' }}</p>
+      </div>
+      <div>
+          <span class="material-icons">timer</span>
+          <p>{{ activity.moving_time * 0.001 | number:'0.0-2' }}</p>
+        </div>
+    </div>
     </mat-card-content>
     
     <mat-card-actions>
